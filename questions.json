@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What does CPU stand for?",
+    "options": [
+      "A. Central Processing Unit",
+      "B. Computer Personal Unit",
+      "C. Central Program Utility",
+      "D. Control Processing Unit"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Which data structure follows First In First Out (FIFO)?",
+    "options": [
+      "A. Stack",
+      "B. Queue",
+      "C. Tree",
+      "D. Graph"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What is the main function of an operating system?",
+    "options": [
+      "A. Run only applications",
+      "B. Manage hardware and software resources",
+      "C. Store data permanently",
+      "D. Connect to the internet"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which unit is used to measure electric current?",
+    "options": [
+      "A. Volt",
+      "B. Ohm",
+      "C. Ampere",
+      "D. Watt"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "What does HTML stand for?",
+    "options": [
+      "A. HyperText Markup Language",
+      "B. HighText Machine Language",
+      "C. Hyper Transfer Markup Logic",
+      "D. Home Tool Markup Language"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Which component stores data temporarily?",
+    "options": [
+      "A. Hard Disk",
+      "B. RAM",
+      "C. ROM",
+      "D. Pen Drive"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which law states that V = IR?",
+    "options": [
+      "A. Newton's Law",
+      "B. Ohm's Law",
+      "C. Kirchhoff's Law",
+      "D. Faraday's Law"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What does URL stand for?",
+    "options": [
+      "A. Uniform Resource Locator",
+      "B. Universal Routing Link",
+      "C. User Resource Link",
+      "D. Uniform Reference Link"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Which language is mainly used for web styling?",
+    "options": [
+      "A. HTML",
+      "B. CSS",
+      "C. JavaScript",
+      "D. Python"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What is the full form of AI?",
+    "options": [
+      "A. Automated Interface",
+      "B. Artificial Intelligence",
+      "C. Advanced Internet",
+      "D. Applied Information"
+    ],
+    "answer": "B"
+  }
+]
