@@ -40,11 +40,11 @@ Using this input, it sends a request to a weather API, retrieves the current wea
    ```bash
    pip install requests
 2. Save the code in a file (for example):
-
+   ```bash
    weather_forecast.py
 
 3. Run the program:
-
+   ```bash
    python weather_forecast.py
 
 4. Enter a valid city name or zip code when prompted
