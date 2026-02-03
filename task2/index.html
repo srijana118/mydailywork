@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>🔐 Password Generator</h2>
+
+    <form method="POST">
+        <label>Password Length</label>
+        <input type="number" name="length" min="4" required value="{{ length }}">
+
+        <label>Included Characters</label>
+
+        <div class="char-box">
+            <label class="char-item">
+                <span>Uppercase (A–Z)</span>
+                <input type="checkbox" name="uppercase" {% if options.uppercase %}checked{% endif %}>
+            </label>
+
+            <label class="char-item">
+                <span>Lowercase (a–z)</span>
+                <input type="checkbox" name="lowercase" {% if options.lowercase %}checked{% endif %}>
+            </label>
+
+            <label class="char-item">
+                <span>Numbers (0–9)</span>
+                <input type="checkbox" name="numbers" {% if options.numbers %}checked{% endif %}>
+            </label>
+
+            <label class="char-item">
+                <span>Symbols (!@#$)</span>
+                <input type="checkbox" name="symbols" {% if options.symbols %}checked{% endif %}>
+            </label>
+        </div>
+
+        <button type="submit" class="generate-btn">
+            Generate Password
+        </button>
+
+        {% if password and "Select at least" not in password and "Length too short" not in password %}
+        <div class="action-row">
+            <button type="submit" class="regen-btn">
+               ⟳ Regenerate
+            </button>
+            
+            <button type="button" class="copy-btn" id="copyBtn" onclick="copyPassword()">
+                ⧉ Copy
+            </button>
+        </div>
+        {% endif %}
+    </form>
+
+    {% if password %}
+    <div class="result">
+        <p id="passwordText" class="password-box">{{ password }}</p>
+    </div>
+    {% endif %}
+</div>
+
+<script>
+function copyPassword() {
+    const password = document.getElementById("passwordText").innerText;
+    const btn = document.getElementById("copyBtn");
+
+    const tempInput = document.createElement("input");
+    tempInput.value = password;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+
+    btn.innerText = "✓ Copied";
+    btn.classList.add("copied");
+
+    setTimeout(() => {
+        btn.innerText = "📋 Copy";
+        btn.classList.remove("copied");
+    }, 2000);
+}
+</script>
+
+</body>
+</html>
