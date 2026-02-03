@@ -48,3 +48,4 @@ This application helps users create strong passwords by selecting the desired pa
 ### 1️⃣ Clone the repository
 ```bash
 git clone <your-repository-link>
+
