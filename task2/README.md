@@ -1,80 +1,56 @@
-# 🔐 Password Generator Web Application
+# Password Generator (Web Application)
 
-A web-based **Password Generator** built using **Python and Flask** that allows users to generate secure and customizable passwords through a clean and modern interface.
+This project is a web-based Password Generator developed using Python and Flask as part of my internship work.  
+The application allows users to generate secure passwords by selecting the desired password length and character options through a clean and interactive user interface.
 
----
-
-## 📌 Project Overview
-
-This application helps users create strong passwords by selecting the desired password length and choosing which character types to include. It focuses on usability, security, and a polished UI experience.
-
----
-
-## ✨ Features
-
-- Custom password length input  
+## Features
+- User-defined password length
 - Option to include:
-  - Uppercase letters (A–Z)
-  - Lowercase letters (a–z)
-  - Numbers (0–9)
-  - Symbols (!@#$%^&*)
-- 🔄 Regenerate password using the same selected settings  
-- ⧉ One-click copy password to clipboard  
-- Guaranteed inclusion of selected character types  
-- Clean, modern, and user-friendly interface  
+  - Uppercase letters
+  - Lowercase letters
+  - Numbers
+  - Symbols
+- Guaranteed inclusion of selected character types
+- 🔄 Regenerate password using the same selected settings
+- ⧉ One-click copy password to clipboard
+- Clean and modern user interface
 
----
+## Project Structure
+task2/
+- main.py  
+- templates/  
+  - index.html  
+- static/  
+  - style.css  
+- README.md  
 
-## 🛠 Tech Stack
+## How to Run
+1. Ensure Python 3.x is installed on your system
+2. Open a terminal or command prompt
+3. Navigate to the project directory
+4. Install Flask:
+   pip install flask
+5. Run the following command:
+   python main.py
+6. Open a browser and visit:
+   http://127.0.0.1:5000/
 
-- **Backend:** Python, Flask  
-- **Frontend:** HTML, CSS  
-- **Client-side scripting:** JavaScript (for copy-to-clipboard functionality)
+## Working
+- The user enters the desired password length
+- The user selects character options (uppercase, lowercase, numbers, symbols)
+- Clicking **Generate Password** creates a secure password
+- Clicking **🔄 Regenerate** generates a new password using the same options
+- Clicking **⧉ Copy** copies the password to the clipboard
 
----
+## Technologies Used
+- Python
+- Flask
+- HTML
+- CSS
+- JavaScript
 
-## ⚙️ How the Application Works
+## Learning Outcome
+This project helped me improve my understanding of Flask framework, backend and frontend integration, secure password generation logic, and UI/UX design principles. It also enhanced my skills in building interactive web applications using Python.
 
-1. User enters the desired password length  
-2. User selects character options (uppercase, lowercase, numbers, symbols)  
-3. Clicking **Generate Password** creates a secure password  
-4. Clicking **🔄 Regenerate** generates a new password using the same settings  
-5. Clicking **⧉ Copy** copies the generated password to the clipboard  
-
----
-
-## 🚀 How to Run the Project Locally
-
-### 1️⃣ Clone the repository
-```bash
-git clone <your-repository-link>
-
-Navigate to the project folder:
-
-cd TASK2
-
-
-Install Flask:
-
-pip install flask
-
-
-Run the application:
-
-python main.py
-
-
-Open your browser and visit:
-
-http://127.0.0.1:5000/
-
-📁 Project Structure
-TASK2/
-│
-├── main.py
-├── templates/
-│   └── index.html
-└── static/
-    └── style.css
-
-
+## Conclusion
+The Password Generator is a practical and user-friendly web application that demonstrates core Python and Flask concepts. It can be further enhanced with additional features such as a password strength indicator or deployment on a cloud platform.
