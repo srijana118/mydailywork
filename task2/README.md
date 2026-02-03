@@ -49,3 +49,32 @@ This application helps users create strong passwords by selecting the desired pa
 ```bash
 git clone <your-repository-link>
 
+Navigate to the project folder:
+
+cd TASK2
+
+
+Install Flask:
+
+pip install flask
+
+
+Run the application:
+
+python main.py
+
+
+Open your browser and visit:
+
+http://127.0.0.1:5000/
+
+📁 Project Structure
+TASK2/
+│
+├── main.py
+├── templates/
+│   └── index.html
+└── static/
+    └── style.css
+
+
